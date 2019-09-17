@@ -1,0 +1,12 @@
+- type: create_array_relationship
+  args:
+    comment: This breaks
+    name: ibreak
+    table:
+      schema: dontexist
+      name: dontexist
+    using:
+      manual_configuration:
+        remote_table: other
+        column_mapping:
+          name: test_name
